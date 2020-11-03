@@ -1,6 +1,5 @@
 {
   "name": "awesome-material-ui-starter",
-  "private": true,
   "description": "Material UI starter for Gatsby with TypeScript support",
   "version": "0.1.0",
   "license": "0BSD",
