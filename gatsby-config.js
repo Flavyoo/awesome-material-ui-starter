@@ -6,12 +6,24 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Project Name`,
-    description: `Project Description`,
+    title: `Awesome Material UI Starter`,
+    description: `Gatsby Starter with Material UI and TypeScript support by default.`,
     author: `@flavyoo`,
   },
   plugins: [
     `gatsby-plugin-material-ui`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Awesome Material UI Starter`,
+        short_name: `AMUIS`,
+        start_url: `/`,
+        background_color: `#033FB4`, // Electric Blue
+        theme_color: `#66BA8A`, // Calm Green
+        display: `standalone`,
+        icon: `static/favicon.ico`,
+      },
+    },
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
@@ -21,6 +33,7 @@ module.exports = {
       },
     },
     {
+      // make sure to configure your editor for typescript
       resolve: 'gatsby-plugin-ts-checker',
       // More info on the options: https://www.npmjs.com/package/fork-ts-checker-webpack-plugin
       options: {
@@ -34,5 +47,8 @@ module.exports = {
         },
       },
     },
+    // this plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-offline`,
   ],
 };

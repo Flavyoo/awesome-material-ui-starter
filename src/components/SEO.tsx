@@ -1,24 +1,18 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import { graphql, useStaticQuery } from 'gatsby';
 
-import { graphql, useStaticQuery } from "gatsby";
-
-import { Helmet } from "react-helmet";
-import React from "react";
+import { Helmet } from 'react-helmet';
+import React from 'react';
 
 interface Meta {
-    name: string,
-    content: string,
+  name: string;
+  content: string;
 }
+
 interface SEOProps {
-    title: string,
-    description?: string,
-    lang?: string,
-    meta?: Meta[]
+  title: string;
+  description?: string;
+  lang?: string;
+  meta?: Meta[];
 }
 
 export default function SEO({ description, lang, meta, title }: SEOProps) {
@@ -33,7 +27,7 @@ export default function SEO({ description, lang, meta, title }: SEOProps) {
           }
         }
       }
-    `,
+    `
   );
 
   const metaDescription = description || site.siteMetadata.description;
