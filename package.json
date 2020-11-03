@@ -3,6 +3,12 @@
   "description": "Material UI starter for Gatsby with TypeScript support",
   "version": "0.1.0",
   "license": "0BSD",
+  "keywords": [
+    "gatsby",
+    "gatsby starter",
+    "gatsby starter typescript",
+    "material-ui"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
