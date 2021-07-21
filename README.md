@@ -14,6 +14,8 @@ Includes support for:
 
 # Development
 
+Runs a local server that is also accessible on your local network.
+
 `npm run local`
 
 # Build
